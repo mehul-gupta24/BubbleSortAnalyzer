@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h2>Bubble Sort Visualizer</h2>
+
+  <div class="controls">
+
+    <!-- 
+      TODO:
+      Create an input where the user can enter how many elements 
+      the array should contain.
+      Requirements:
+      - The ID MUST be "size"
+      - JS will read this value in the next component
+      - Add placeholder: "Array Size (e.g., 10)"
+    -->
+      <input type="text" placeholder="Array Size (e.g., 10)" id="size">
+      
+      <!-- 
+        TODO:
+        Create an input where the user can manually enter custom elements.
+        
+        Requirements:
+        - The ID MUST be "elements"
+        - Elements must be comma-separated
+        - JS will convert them into bars in the next component
+        - Add placeholder: "Enter elements (comma separated)"
+        -->
+        <input type="text" placeholder="Enter elements (comma separated)" id="elements">
+
+    <!-- 
+      TODO:
+      Create a button that will call a JS function to generate bars.
+
+      Requirements:
+      - The ID MUST be "generate"
+      - JS will attach functionality in the next component
+      - Content of the button MUST be "Generate Bars"
+    -->
+      <button id="generate">Generate Bars</button>
+      
+      <!-- 
+        TODO:
+        Create a button that will trigger the Bubble Sort animation.
+        
+        Requirements:
+        - The ID MUST be "sort"
+        - JS will attach functionality in the next component
+        - Content of the button MUST be "Start Sorting"
+        -->
+        <button id="sort">Start Sorting</button>
+
+  </div>
+
+  <!-- 
+    IMPORTANT:
+    The bars of the array will be dynamically created inside this container.
+    Do NOT change the ID.
+  -->
+  <div id="bars-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

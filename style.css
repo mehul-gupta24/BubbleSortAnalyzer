@@ -1,0 +1,174 @@
+body {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    padding-top: 40px;
+    margin: 0;
+  }
+  
+  /* 
+    BARS CONTAINER
+    This box holds all the bars that represent the numbers.
+    Bars are created dynamically using JavaScript.
+  */
+  #bars-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 350px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* 
+    INDIVIDUAL BARS
+    Each bar represents one number from the array.
+    Height of the bar depends on the value of the element.
+  */
+  .bar {
+    width: 20px;
+    margin: 0 3px;
+    background: #4c8bf5;
+    border-radius: 4px;
+    transition: height 0.2s ease, background 0.2s ease; 
+  }
+  
+  /* 
+    LABELS ON BARS
+    Displays the numerical value on top of each bar.
+  */
+  .bar-label {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 4px;
+  }
+  
+  
+  /* 
+    CONTROLS SECTION
+    The input fields and buttons appear inside this container.
+  */
+  .controls {
+    margin-bottom: 30px;
+  }
+  
+  /* 
+    INPUT FIELDS
+    Basic styling for number and text inputs.
+    Rounded corners + consistent spacing.
+  */
+  input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    margin: 0 6px;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* 
+    BUTTON STYLING
+    Both "Generate Bars" and "Start Sorting" buttons share this style.
+  */
+  button {
+    margin: 0 8px;
+    padding: 10px 18px;
+    background: #ffcb3c;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 15px;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* RESPONSIVENESS */
+  
+  /* Large Tablets */
+  @media (max-width: 992px) {
+    #bars-container {
+      height: 300px;
+    }
+  
+    .bar {
+      width: 18px;
+      margin: 0 2px;
+    }
+  }
+  
+  /* Tablets & Medium Screens */
+  @media (max-width: 768px) {
+    input,
+    button {
+      font-size: 14px;
+      padding: 8px 14px;
+    }
+  
+    #bars-container {
+      height: 260px;
+    }
+  
+    .bar {
+      width: 14px;
+      margin: 0 2px;
+    }
+  }
+  
+  /* Mobile Phones */
+  @media (max-width: 500px) {
+  
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 0 20px;
+    }
+  
+    input,
+    button {
+      width: 100%;
+      margin: 0;
+      font-size: 14px;
+    }
+  
+    #bars-container {
+      height: 220px;
+      width: 95%;
+      padding: 10px;
+    }
+  
+    .bar {
+      width: 10px;
+      margin: 0 1px;
+    }
+  }
+  
+  /* Extra Small Devices */
+  @media (max-width: 360px) {
+    h2 {
+      font-size: 20px;
+    }
+  
+    .bar {
+      width: 8px;
+      margin: 0 1px;
+    }
+  
+    #bars-container {
+      height: 200px;
+    }
+  }
+  
+  
+  
